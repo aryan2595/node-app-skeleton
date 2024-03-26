@@ -1,8 +1,7 @@
 const cors = require("cors");
-const path = require("path");
 const express = require("express");
 
-const PORT = 80;
+const PORT = 4500;
 const app = express();
 
 app.use(cors());
@@ -16,5 +15,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.warn(`Server is runing on http://localhost:${PORT}`);
+  console.warn(`Server is runing on http://13.59.92.127:${PORT}`);
 });
